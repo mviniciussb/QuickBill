@@ -16,7 +16,7 @@
 }
 
 .modal-card, .wrapper{
-    margin: 0; /* Remover ou ajustar a margem */
+    margin: 0;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden; /* Evitar rolagem */
+    overflow: hidden;
     background-image: url("./img/backgroudn.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,7 +90,7 @@ form button:hover {
 
 .modal-card {
     height: 100vh;
-    position: fixed; /* Use fixed instead of absolute */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
