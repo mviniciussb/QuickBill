@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    font-size: 62.5%;
+
+    --laranja-padrao: #FF4F18;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+}
+
+.modal-card, .wrapper{
+    margin: 0; /* Remover ou ajustar a margem */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Evitar rolagem */
+    background-image: url("./img/backgroudn.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.6rem;
+}
+
+h1 {
+    color: var(--laranja-padrao);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Genos", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper input {
+    padding: 1.6rem;
+    width: 100%;
+    border-radius: .4rem;
+    border: 1px solid rgba(62, 63, 65, 0.3);
+    background: #DCE2E9;
+}
+
+.input-wrapper label {
+    font-size: 1.4rem;
+    color: 1px solid rgba(62, 63, 65, 0.3);
+    line-height: 1.8rem;
+    margin-bottom: .8rem;
+    margin-top: 1.8rem;
+}
+
+form{
+    background-color: white;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    width: 100%;
+    justify-content: center;
+    padding: 1.6rem;
+    margin-top: 3.2rem;
+    background-color: var(--laranja-padrao);
+    border-radius: .4rem;
+    border: none;
+    color: #FFFFFF;
+    line-height: 2rem;
+    font-weight: 700;
+    transition: background 1s;
+}
+
+form button:hover {
+    background-color: #9a3e22;
+    cursor: pointer;
+}
+
+.modal-card {
+    height: 100vh;
+    position: fixed; /* Use fixed instead of absolute */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.829);
+    padding: 5rem 2.5rem;
+    font-size: 1.2rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.formPopUp {
+    position: relative;
+}
+
+.buttonClose {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.buttonClose:hover {
+    transform: scale(1.1);
+}
+
+.hide {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.close {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Rata Calc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <form class="myForm">
+            <h1>Pro Rata Calc</h1>
+
+            <div class="input-wrapper">
+                <label for="startDate">Data de ativação</label>
+                <input type="date" id="startDate" name="startDate" required>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="endDate">Data fechamento</label>
+                <input type="date" id="endDate" name="endDate" required>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="number">Valor do plano</label>
+                <input type="number" id="number" name="number" required>
+            </div>
+
+            <div class="buttons">
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal-card">
+
+        <form class="formPopUp">
+            <img class="buttonClose" src="img/close.svg" alt="">
+
+            <h2></h2>
+        </form>
+    </div>
+
+    <script src="./javascript/main.js" type="module"></script>
+
+</body>
+
+</html>
