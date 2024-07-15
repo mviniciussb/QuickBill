@@ -131,10 +131,6 @@ form button:hover {
     transform: translateY(0);
 }
 
-.close {
-    display: none;
-}
-
 .buttons {
     display: flex;
     gap: 1rem;
