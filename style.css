@@ -45,7 +45,7 @@ h1 {
 }
 
 .input-wrapper input {
-    padding: 1.6rem;
+    padding: 1.6rem 2rem;
     width: 100%;
     border-radius: .4rem;
     border: 1px solid rgba(62, 63, 65, 0.3);
