@@ -27,7 +27,7 @@ export function formula(){
         }
 
         document.querySelector(".modal-card form h2").textContent = `O seu proporcional é de R$ ${result.toFixed(2).replace(".", ",")}`
-        document.querySelector(".modal-card").classList.toggle("hide")
+        document.querySelector(".modal-card").classList.add("hide")
     });    
 }
 
@@ -36,6 +36,7 @@ export function closeButton(){
     closeButton.addEventListener("click", close)
 
     function close(){
+    document.querySelector(".modal-card").classList.remove("hide")
     document.querySelector(".modal-card").classList.toggle("close")
     }
 }
