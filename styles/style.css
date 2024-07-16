@@ -37,6 +37,7 @@ h1 {
     font-weight: 700;
     font-family: "Genos", sans-serif;
     font-optical-sizing: auto;
+    font-size: 2.6rem;
 
     text-shadow: .2px .2px .2px rgba(0, 0, 0, 0.288);
 }
@@ -156,14 +157,13 @@ form button:hover {
     flex-direction: row;
     align-items: end;
 
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .class-col {
     display: flex;
     flex-direction: column;
-    width: 38%;
-    justify-content: left;
+    justify-content: center;
 }
 
 .brisanet-logo-img {
