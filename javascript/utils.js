@@ -7,6 +7,7 @@ export function formula(){
         const startDateInput = document.getElementById('startDate').value;
         const endDateInput = document.getElementById('endDate').value;
         const number = Number(document.getElementById('number').value)
+        number = number.toLocaleString("pt-BR")
     
     
         const startDate = new Date(startDateInput);
