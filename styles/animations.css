@@ -315,3 +315,38 @@
     bottom: -60px;
     animation-delay: 103s;
 }
+
+.background {
+    z-index: -1;
+}
+
+
+
+
+.error-message {
+    background-color: rgb(35, 86, 137);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+
+    padding: .8rem 0;
+
+    color: rgb(249, 231, 231);
+    font-weight: 700;
+
+    transform: translateY(-40px);
+    opacity: 0;
+
+    transition: 1s;
+}
+
+
+
+.error-message.error-message-on {
+    transform: translateY(0);
+    opacity: 1;
+}
+

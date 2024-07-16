@@ -27,9 +27,6 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    /* background-image: url("./img/backgroudn.png");
-    background-repeat: no-repeat;
-    background-size: cover; */
     font-size: 1.6rem;
     padding: 0 4rem;
 }
@@ -151,34 +148,8 @@ form button:hover {
     gap: 1rem;
 }
 
-.background {
-    z-index: -1;
-}
 
-.error-message {
-    background-color: rgb(35, 86, 137);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
 
-    text-align: center;
-
-    padding: .8rem 0;
-
-    color: rgb(249, 231, 231);
-    font-weight: 700;
-
-    transform: translateY(-40px);
-    opacity: 0;
-
-    transition: 1s;
-}
-
-.error-message.error-message-on {
-    transform: translateY(0);
-    opacity: 1;
-}
 
 .myForm div:nth-child(4) {
     display: flex;
