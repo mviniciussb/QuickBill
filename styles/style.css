@@ -157,13 +157,14 @@ form button:hover {
     flex-direction: row;
     align-items: end;
 
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .class-col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 50%;
 }
 
 .brisanet-logo-img {
