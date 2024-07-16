@@ -6,7 +6,7 @@ export function formula(){
     
         const startDateInput = document.getElementById('startDate').value;
         const endDateInput = document.getElementById('endDate').value;
-        const number = Number(document.getElementById('number').value);
+        const number = Number(document.getElementById('number').value)
     
     
         const startDate = new Date(startDateInput);

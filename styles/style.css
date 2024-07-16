@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("./animations.css");
 
 :root {
     font-size: 62.5%;
@@ -25,9 +26,9 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    background-image: url("./img/backgroudn.png");
+    /* background-image: url("./img/backgroudn.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     font-size: 1.6rem;
 }
 
@@ -136,3 +137,9 @@ form button:hover {
     display: flex;
     gap: 1rem;
 }
+
+.background{
+    z-index: -1;
+}
+
+
