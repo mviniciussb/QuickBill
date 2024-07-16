@@ -28,7 +28,7 @@ export function formula() {
             }
 
             result = Number(result).toFixed(2)
-            document.querySelector(".modal-card form h2").textContent = `O seu proporcional é de R$ ${result}`
+            document.querySelector(".modal-card form h2").textContent = `Proporcional: R$ ${result}`
             document.querySelector(".modal-card").classList.add("hide")
         } else {
             document.querySelector(".error-message").classList.add("error-message-on")
