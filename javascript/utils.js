@@ -7,12 +7,15 @@ export function formula() {
         const startDateInput = document.getElementById('startDate').value;
         const endDateInput = document.getElementById('endDate').value;
         let number = document.getElementById('number').value
+        number = Number(number)
 
         const startDate = new Date(startDateInput);
         const endDate = new Date(endDateInput);
 
         // Calcula a diferença em milissegundos
         const timeDifference = Math.abs(endDate.getTime() - startDate.getTime());
+        
+        
 
         // Converte a diferença de milissegundos para dias
         const dayDifference = timeDifference / (1000 * 3600 * 24);
