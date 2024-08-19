@@ -1,13 +1,7 @@
-import * as utils from "./utils.js";
-import { closeButton } from "./buttonClose.js";
-import { focusInput } from "./focus.js";
-import { errorMessageFocus } from "./focus.js";
+import * as utils from "./main-scripts/utils.js";
+import { helpSticker } from "./others/stickerFooter.js";
 
+utils.calculation()
+helpSticker()
 
-
-
-utils.formula()
-closeButton()
-focusInput()
-errorMessageFocus()
 

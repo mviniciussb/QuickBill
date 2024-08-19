@@ -6,22 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="img/favicon-brisanet.svg" type="webp/x-icon">
-    <link rel="icon" sizes="192x192" href="img/favicon-brisanet.png">
-    <link rel="icon" sizes="512x512" href="img/favicon-brisanet.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-brisanet.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon-brisanet.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon-brisanet.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon-brisanet.png">
 
 
-    <title>Pro Rata Calc</title>
+    <link rel="icon" sizes="192x192" href="./img/icon-brisanet-smartphone.png">
+    <link rel="icon" sizes="512x512" href="./img/icon-brisanet-smartphone.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icon-brisanet-smartphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icon-brisanet-smartphone.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icon-brisanet-smartphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icon-brisanet-smartphone.png">
+
+
+    <title>PRO RATA CALC | Calculadora de proporcionais 5G</title>
 </head>
 
 <body>
-
-    <div class="error-message">
-        <p>Digite apenas números</p>
-    </div>
 
     <ul class="background">
         <li></li>
@@ -66,47 +64,61 @@
         <li></li>
     </ul>
 
-    <div class="wrapper">
-        <form class="myForm">
-            <h1>Pro Rata Calc</h1>
+    <form class="myForm">
+        <h1>Pro Rata Calc</h1>
 
-            <div class="input-wrapper">
-                <label for="startDate">Data de ativação</label>
-                <input type="date" id="startDate" name="startDate" required>
-            </div>
+        <div class="input-wrapper">
+            <label for="maturity">Data de Vencimento:</label>
+            <select id="maturity" required>
+                <option value="" disabled selected>Escolha uma opção...</option>
+                <option value="5">Dia 5</option>
+                <option value="10">Dia 10</option>
+                <option value="15">Dia 15</option>
+                <option value="20">Dia 20</option>
+                <option value="25">Dia 25</option>
+                <option value="30">Dia 30</option>
 
-            <div class="input-wrapper">
-                <label for="endDate">Data fechamento</label>
-                <input type="date" id="endDate" name="endDate" required>
-            </div>
+            </select>
+        </div>
 
-            <div class="input-wrapper">
-                <div class="class-col">
-                    <label for="number">Valor do plano</label>
-                    <input type="text" id="number" name="number" required autocomplete="off" placeholder="Ex: 1.0">
-                </div>
 
+        <div class="class-col">
+            <label for="value-plan">Valor do plano</label>
+            <div class="align-img-input">
+                <select id="value-plan" required>
+                    <option value="" disabled selected>Opções...</option>
+                    <option selected value="4.99">R$ 4,99</option>
+                </select>
                 <figure>
                     <a href="https://www.brisanet.com.br/redemovel" target="_blank">
                         <img class="brisanet-logo-img" src="img/favicon-brisanet.svg" alt="">
                     </a>
                 </figure>
             </div>
+        </div>
 
-            <div class="buttons">
-                <button type="reset">Limpar</button>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-    </div>
+
+
+
+        <div class="buttons">
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
 
     <div class="modal-card">
 
         <form class="formPopUp">
-            <img class="buttonClose" src="img/close.svg" alt="">
+            <img class="buttonClose" src="img/buttonCloseModal.svg" alt="">
 
             <h2></h2>
         </form>
+    </div>
+
+    <div class="sticker">
+        <a href="https://forms.gle/RvUn99oWAN8MaXCS6" target="_blank">
+            <img class="bug-img" src="img/bug-fill.svg" alt="">
+        </a>
     </div>
 
     <script src="./javascript/main.js" type="module"></script>

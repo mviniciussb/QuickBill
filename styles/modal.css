@@ -1,0 +1,42 @@
+.modal-card {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.829);
+    padding: 5rem 2.5rem;
+    font-size: 1.2rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.formPopUp {
+    position: relative;
+}
+
+.buttonClose {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.buttonClose:hover {
+    transform: scale(1.1);
+}
+
+.hide {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

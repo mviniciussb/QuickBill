@@ -1,0 +1,22 @@
+
+.class-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.brisanet-logo-img {
+    position: absolute;
+    width: 50px;
+    top: -25%;
+    right: 5px;
+    transition: .5s;
+}
+
+.brisanet-logo-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.align-img-input {
+    position: relative;
+}
