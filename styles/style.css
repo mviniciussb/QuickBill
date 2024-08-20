@@ -42,8 +42,6 @@ h1 {
     font-family: "Genos", sans-serif;
     font-optical-sizing: auto;
     font-size: 2.6rem;
-
-    text-shadow: .2px .2px .2px rgba(0, 0, 0, 0.288);
 }
 
 .input-wrapper {
@@ -51,11 +49,12 @@ h1 {
     flex-direction: column;
 }
 
-.myForm, .formPopUp {
+.myForm,
+.formPopUp {
     background-color: var(--default-white);
     padding: 5rem;
     border-radius: 1rem;
-    margin-top: -6rem;
+    margin-top: -15rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -67,13 +66,8 @@ label {
     margin-top: 1.8rem;
 }
 
-.select-container {
-    position: relative;
-    display: inline-block;
-  }
-
 select {
-    padding: .8rem 2rem .8rem 1.4rem;
+    padding: 1rem 2rem .8rem 1.4rem;
     border-radius: .4rem;
     border: 1px solid rgba(62, 63, 65, 0.3);
     background: #DCE2E9;
@@ -98,7 +92,7 @@ select {
     width: 100%;
     justify-content: center;
     padding: 1rem 1.6rem;
-    margin-top: 3.2rem;
+    margin-top: 4.5rem;
     background-color: var(--dafault-orange);
     border-radius: .4rem;
     border: none;
@@ -115,4 +109,16 @@ select {
 
     justify-content: center;
     gap: 1.5rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }

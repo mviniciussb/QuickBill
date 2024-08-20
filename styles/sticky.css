@@ -2,9 +2,10 @@
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     transition: .5s;
+    opacity: .7;
 }
 
 .bug-img:hover{
