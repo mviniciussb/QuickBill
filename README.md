@@ -15,7 +15,9 @@ Com o crescente lançamento dos chips 5G em Mossoró, identifiquei a necessidade
 <h2>Tecnologias Utilizadas</h2>
 
 JavaScript: Implementação da lógica de cálculo e funcionalidades interativas.
+
 HTML: Estruturação da interface e dos formulários.
+
 CSS: Estilização da aplicação para uma visualização clara e moderna.
 
 <h2>Acesso</h2>
