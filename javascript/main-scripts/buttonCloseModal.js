@@ -3,6 +3,6 @@ export function closeButton() {
     closeButton.addEventListener("click", close)
 
     function close() {
-        document.querySelector(".modal-card").classList.remove("hide")
+        document.querySelector(".modal-card").classList.toggle("hide")
     }
 }
