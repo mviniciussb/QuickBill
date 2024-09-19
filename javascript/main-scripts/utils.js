@@ -34,6 +34,6 @@ export function calculation() {
 
         document.querySelector(".modal-card form h2").textContent = `Proporcional: R$ ${result}`
         document.querySelector(".modal-card").classList.add("hide")
-        closeButton()
     });
+    closeButton()
 }
