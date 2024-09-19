@@ -4,9 +4,11 @@
 @import url("./modal.css");
 @import url("./logo.css");
 @import url("./sticky.css");
+@import url("./animationsSticker.css");
 
 :root {
     font-size: 62.5%;
+
 
     --dafault-orange: #FF4F18;
     --default-white: #FFFFFF;
@@ -42,8 +44,8 @@ h1 {
     font-family: "Genos", sans-serif;
     font-optical-sizing: auto;
     font-size: 2.6rem;
+    /* text-align: center; */
 }
-
 .input-wrapper {
     display: flex;
     flex-direction: column;
@@ -106,9 +108,11 @@ select {
     display: flex;
     flex-direction: row;
     align-items: end;
-
+    
     justify-content: center;
     gap: 1.5rem;
+
+    position: relative;
 }
 
 .sr-only {
@@ -121,4 +125,26 @@ select {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+
+.buttonQuickmeter{
+    background-color: #1282cc;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0 .5rem 0 1rem;
+
+
+
+    border-radius: 4rem 0 1rem 0;
+
+   bottom: -5.3rem;
+   right: -5.3rem;
+}
+
+.buttonQuickmeter img{
+    width: 1.5rem;
+    padding-bottom: 2rem;
+    padding-top: 2.5rem;
 }
