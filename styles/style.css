@@ -51,8 +51,9 @@ h1 {
     flex-direction: column;
 }
 
-.myForm,
-.formPopUp {
+.quickbill,
+.formPopUp,
+.quickmer {
     background-color: var(--default-white);
     padding: 5rem;
     border-radius: 1rem;
@@ -83,11 +84,22 @@ select {
     cursor: pointer;
 }
 
+input[type= "number"]{
+    padding: 1rem 2rem .8rem 1.4rem;
+    border-radius: .4rem;
+    border: 1px solid rgba(62, 63, 65, 0.3);
+    background: #DCE2E9;
+    color: rgb(62, 63, 65);
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
 #value-plan {
     width: 10rem;
 }
 
-.myForm button {
+.quickbill button, .quickmer button {
     display: flex;
     align-items: center;
     gap: .8rem;
@@ -127,8 +139,7 @@ select {
     border-width: 0;
 }
 
-.buttonQuickmeter{
-    background-color: #1282cc;
+.buttonQuickmer, .buttonQuickmer2{
     position: absolute;
     display: flex;
     overflow: hidden;
@@ -143,8 +154,12 @@ select {
    right: -5.3rem;
 }
 
-.buttonQuickmeter img{
+.buttonQuickmer img, .buttonQuickmer2 img{
     width: 1.5rem;
     padding-bottom: 2rem;
     padding-top: 2.5rem;
+}
+
+.hideScreen{
+    display: none;
 }

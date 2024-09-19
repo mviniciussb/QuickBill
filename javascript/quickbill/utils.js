@@ -1,11 +1,10 @@
 import { today } from "./currentDate.js"
 import { closeData } from "./maturityToClosing.js";
 import { getNextMonthDate } from "./nexDateMonth.js";
-import { closeButton } from "../secondaries-scripts/buttonCloseModal.js";
 
 
 export default function calculation() {
-    document.querySelector('.myForm').addEventListener('submit', function (event) {
+    document.querySelector('.quickbill').addEventListener('submit', function (event) {
         event.preventDefault();
 
         const valuePlan = Number(document.getElementById('value-plan').value);
@@ -18,7 +17,7 @@ export default function calculation() {
         let nextMonthDateMilliseconds = nextMonthDate.getTime();
         let diferencaMilissegundos = nextMonthDateMilliseconds - todayDateMilliseconds;
         let dayDifference = diferencaMilissegundos / (1000 * 60 * 60 * 24);
-        
+
 
         let isSmaller = (dayDifference <= 10)
         let result
@@ -30,10 +29,9 @@ export default function calculation() {
         }
 
         result = result.toFixed(2).replace(".", ",")
-        
+
 
         document.querySelector(".modal-card form h2").textContent = `Proporcional: R$ ${result}`
         document.querySelector(".modal-card").classList.add("hide")
     });
-    closeButton()
 }

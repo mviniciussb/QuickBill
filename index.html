@@ -78,8 +78,8 @@
         <li></li>
     </ul>
 
-    <form class="myForm">
-        <h1>QUICKBILL</h1>
+    <form class="quickbill">
+        <h1>QUICKBILL CALC</h1>
 
         <div class="input-wrapper">
             <label for="maturity">Data de Vencimento:</label>
@@ -96,7 +96,7 @@
         </div>
 
 
-        <div class="class-col">
+        <div class="select-form">
             <label for="value-plan">Valor do plano</label>
             <div class="align-img-input">
                 <select id="value-plan" required>
@@ -124,11 +124,40 @@
             <button type="reset">Limpar</button>
             <button type="submit">Enviar</button>
 
-        <div class="buttonQuickmeter"><img src="img/arrow-up-right-fill.svg" alt="Flecha indicando link"></div>
+        <div class="buttonQuickmer"><img src="img/arrow-up-right-fill.svg" alt="Flecha indicando link"></div>
 
         </div>
     </form>
 
+    <form class="quickmer hideScreen">
+        <h1>QUICKMER CALC</h1>
+
+        <div class="input-wrapper">
+            <label for="minutes">Tempo de uso:</label>
+            <input type="number" id="minutes" name="minutes" required placeholder="Digite em minutos">
+                
+            <label for="activity">Tipo de Atividade:</label>
+            <select id="activity" name="activity">
+                <option value="" selected disabled>Escolha uma opção...</option>
+                <option value="videoSD">Streaming de Vídeo (SD)</option>
+                <option value="videoHD">Streaming de Vídeo (HD)</option>
+                <option value="video4K">Streaming de Vídeo (4K)</option>
+                <option value="audioHQ">Streaming de Áudio (HD)</option>
+                <option value="webBrowsing">Navegação na Web</option>
+                <option value="socialMedia">Redes Sociais</option>
+                <option value="videoCall">Chamadas de Vídeo</option>
+            </select>
+        </div>
+
+
+        <div class="buttons">
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+
+        <div class="buttonQuickmer2"><img src="img/arrow-up-right-fill.svg" alt="Flecha indicando link"></div>
+
+        </div>
+    </form>
 
 
     <div class="modal-card">

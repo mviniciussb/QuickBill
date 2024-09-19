@@ -10,10 +10,8 @@
     }
   }
   
-  .buttonQuickmeter {
-    /* width: 200px;
-    height: 200px; */
-    background-color: #18A1FF;
+  .buttonQuickmer, .buttonQuickmer2 {
+    background-color: #1283cf;
     animation: scaleAnimation 1s infinite;
   }
   
