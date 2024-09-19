@@ -1,7 +1,7 @@
 import { today } from "./currentDate.js"
 import { closeData } from "./maturityToClosing.js";
 import { getNextMonthDate } from "./nexDateMonth.js";
-import { closeButton } from "./buttonCloseModal.js";
+import { closeButton } from "../secondaries-scripts/buttonCloseModal.js";
 
 
 export default function calculation() {
