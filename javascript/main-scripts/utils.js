@@ -4,7 +4,7 @@ import { getNextMonthDate } from "./nexDateMonth.js";
 import { closeButton } from "./buttonCloseModal.js";
 
 
-export function calculation() {
+export default function calculation() {
     document.querySelector('.myForm').addEventListener('submit', function (event) {
         event.preventDefault();
 

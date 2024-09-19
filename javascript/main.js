@@ -1,7 +1,7 @@
-import * as utils from "./main-scripts/utils.js";
-import { backpage } from "./secondaries-scripts/backpage.js";
+import quickbill from "./main-scripts/utils.js";
+import escFunction from "./secondaries-scripts/backpage.js";
 
-utils.calculation()
-backpage()
+quickbill()
+escFunction()
 
 
