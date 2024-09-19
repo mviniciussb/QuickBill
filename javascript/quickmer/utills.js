@@ -1,7 +1,8 @@
+import broadband from "./broadband.js"
+
 export default function calculateDataUsage() {
 
-
-    const myFormQuickmer = document.querySelector('.quickmer');
+const myFormQuickmer = document.querySelector('.quickmer');
 
 
     myFormQuickmer.addEventListener("submit", (event) => {
@@ -9,22 +10,11 @@ export default function calculateDataUsage() {
 
         let minutes = document.querySelector("#minutes").value;
         const activity = document.querySelector("#activity").value;
-        let totalUsage
 
 
-        const usageRates = {
-            videoSD: 7,
-            videoHD: 16.6,
-            video4K: 83.3,
-            audioHQ: 2.5,
-            webBrowsing: 1,
-            socialMedia: 5,
-            videoCall: 10,
-        };
+         let totalUsage = (minutes * broadband[activity]).toFixed(2)
 
-
-        totalUsage = (minutes * usageRates[activity]).toFixed(2)
-
+         
         if (totalUsage >= 1024) {
             totalUsage = (totalUsage / 1024).toFixed(2) + " GB";
         } else {
