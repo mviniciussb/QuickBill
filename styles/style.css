@@ -49,9 +49,8 @@ h1 {
     flex-direction: column;
 }
 
-.quickbill,
-.formPopUp,
-.quickmeter {
+.myForm,
+.formPopUp {
     background-color: var(--default-white);
     padding: 5rem;
     border-radius: 1rem;
@@ -86,7 +85,7 @@ select {
     width: 10rem;
 }
 
-.quickbill button, .quickmeter button {
+.myForm button {
     display: flex;
     align-items: center;
     gap: .8rem;
@@ -122,8 +121,4 @@ select {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
-}
-
-.quickmeter{
-    display: none;
 }
