@@ -5,7 +5,7 @@ import { closeButton } from "./buttonCloseModal.js";
 
 
 export function calculation() {
-    document.querySelector('.myForm').addEventListener('submit', function (event) {
+    document.querySelector('.quickbill').addEventListener('submit', function (event) {
         event.preventDefault();
 
         const valuePlan = Number(document.getElementById('value-plan').value);
