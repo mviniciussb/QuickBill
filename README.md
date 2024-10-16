@@ -24,4 +24,4 @@ Com o crescente lançamento dos chips 5G em Mossoró, identifiquei a necessidade
    ```bash
    git clone https://github.com/mviniciussb/pro-rata-calc.git
 
-[QUICKBILL CALC](https://mviniciussb.github.io/Quick_Bill_Calc/)
+[QuickBill](https://mviniciussb.github.io/QuickBill/)
